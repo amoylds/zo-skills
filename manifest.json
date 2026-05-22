@@ -997,48 +997,6 @@
       "date_added": "2026-02-02"
     },
     {
-      "name": "twitter-api",
-      "description": "Post, quote, reply to, and delete X (Twitter) tweets via the local X CLI script using API keys. Use when the user asks to tweet, quote tweet, reply, or delete on X/Twitter.",
-      "metadata": {
-        "author": "0.zo.computer",
-        "category": "Community",
-        "display-name": "Post to X (Twitter)",
-        "emoji": "🐦"
-      },
-      "display": {
-        "icon": "x",
-        "tags": [
-          "automation",
-          "developer-tools",
-          "social"
-        ],
-        "integrations": [
-          "x"
-        ],
-        "secrets": [
-          {
-            "secret_name": "X_API_KEY",
-            "description": "From the X developer portal › your project › Keys and tokens (API Key)."
-          },
-          {
-            "secret_name": "X_API_KEY_SECRET",
-            "description": "From the X developer portal › your project › Keys and tokens (API Key Secret)."
-          },
-          {
-            "secret_name": "X_ACCESS_TOKEN",
-            "description": "From the X developer portal › your project › Keys and tokens (Access Token)."
-          },
-          {
-            "secret_name": "X_ACCESS_TOKEN_SECRET",
-            "description": "From the X developer portal › your project › Keys and tokens (Access Token Secret)."
-          }
-        ]
-      },
-      "slug": "twitter-api",
-      "path": "Community/twitter-api",
-      "date_added": "2026-02-01"
-    },
-    {
       "name": "daily-affirmations",
       "description": "Send yourself a daily text message with a randomly selected or rotating positive affirmation.",
       "metadata": {
@@ -1115,29 +1073,6 @@
       },
       "slug": "generate-custom-qr-code",
       "path": "Community/generate-custom-qr-code",
-      "date_added": "2026-01-27"
-    },
-    {
-      "name": "google-calendar",
-      "description": "Query Google Calendar for events and free time blocks. Requires google-direct-oauth skill to be \nset up first. Ask Zo things like \"what's on my calendar today\", \"find free time tomorrow\", \n\"show my week\", or \"when am I free on Friday between 10am and 4pm\".\n",
-      "compatibility": "Requires zo-google-direct-oauth skill with valid tokens at /home/.z/google-oauth/",
-      "metadata": {
-        "author": "rob.zo.computer",
-        "category": "Community",
-        "emoji": "🅖"
-      },
-      "display": {
-        "icon": "calendar",
-        "tags": [
-          "productivity",
-          "automation"
-        ],
-        "integrations": [
-          "google_calendar"
-        ]
-      },
-      "slug": "google-calendar",
-      "path": "Community/google-calendar",
       "date_added": "2026-01-27"
     },
     {
@@ -1566,29 +1501,6 @@
       "date_added": "2026-01-27"
     },
     {
-      "name": "google-direct-oauth",
-      "description": "Direct Google OAuth integration without third-party apps. Connects your Google Calendar and Gmail \nusing your own OAuth credentials in Google Cloud Console. Includes a refresh daemon that keeps \ntokens warm. Use this when you want direct API access to Google services without relying on \nexternal OAuth providers.\n",
-      "compatibility": "Requires a Google Cloud Console account (free). Works on any Zo Computer.",
-      "metadata": {
-        "author": "Zo",
-        "category": "Official",
-        "emoji": "🅖"
-      },
-      "display": {
-        "icon": "key",
-        "tags": [
-          "developer-tools"
-        ],
-        "integrations": [
-          "gmail",
-          "google_calendar"
-        ]
-      },
-      "slug": "zo-google-direct-oauth",
-      "path": "Official/zo-google-direct-oauth",
-      "date_added": "2026-01-27"
-    },
-    {
       "name": "grafana-setup",
       "description": "Sets up a visual dashboard to explore and analyze your system logs and data",
       "metadata": {
@@ -1652,40 +1564,6 @@
       },
       "slug": "zo-important-email-digest",
       "path": "Official/zo-important-email-digest",
-      "date_added": "2026-01-27"
-    },
-    {
-      "name": "linkedin",
-      "description": "LinkedIn tool for searching profiles, checking messages, and summarizing your feed using session cookies.",
-      "homepage": "https://github.com/clawdbot/linkedin-cli",
-      "compatibility": "see metadata.clawdbot.requires",
-      "metadata": {
-        "author": "Zo",
-        "category": "Connections",
-        "display-name": "LinkedIn"
-      },
-      "display": {
-        "icon": "linkedin",
-        "tags": [
-          "automation",
-          "social"
-        ],
-        "integrations": [
-          "linkedin"
-        ],
-        "secrets": [
-          {
-            "secret_name": "LINKEDIN_LI_AT",
-            "description": "The `li_at` cookie value from a logged-in LinkedIn browser session (DevTools › Application › Cookies › linkedin.com)."
-          },
-          {
-            "secret_name": "LINKEDIN_JSESSIONID",
-            "description": "The `JSESSIONID` cookie value from the same LinkedIn session. Strip surrounding quotes if present."
-          }
-        ]
-      },
-      "slug": "zo-linkedin",
-      "path": "Connections/zo-linkedin",
       "date_added": "2026-01-27"
     },
     {
@@ -1853,29 +1731,6 @@
       },
       "slug": "zo-ssh-setup",
       "path": "Official/zo-ssh-setup",
-      "date_added": "2026-01-27"
-    },
-    {
-      "name": "twitter",
-      "description": "Let Zo use your X (Twitter) account",
-      "compatibility": "Requires the bird CLI, pre-installed on Zo. Credentials can be set in Zo settings.",
-      "metadata": {
-        "author": "Zo",
-        "category": "Connections",
-        "display-name": "X (Twitter)"
-      },
-      "display": {
-        "icon": "x",
-        "tags": [
-          "automation",
-          "social"
-        ],
-        "integrations": [
-          "x"
-        ]
-      },
-      "slug": "zo-twitter",
-      "path": "Connections/zo-twitter",
       "date_added": "2026-01-27"
     },
     {
@@ -2308,52 +2163,6 @@
       "date_added": "2026-01-26"
     },
     {
-      "name": "gog",
-      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs",
-      "homepage": "https://gogcli.sh",
-      "compatibility": "Requires zo-google-direct-oauth skill with valid tokens at /home/.z/google-oauth/; see metadata.clawdbot.requires",
-      "metadata": {
-        "author": "Clawdbot",
-        "category": "External",
-        "clawdbot": {
-          "emoji": "🎮",
-          "requires": {
-            "bins": [
-              "gog"
-            ]
-          },
-          "install": [
-            {
-              "id": "brew",
-              "kind": "brew",
-              "formula": "steipete/tap/gogcli",
-              "bins": [
-                "gog"
-              ],
-              "label": "Install gog (brew)"
-            }
-          ]
-        },
-        "display-name": "Google Workspace Tool"
-      },
-      "display": {
-        "icon": "globe",
-        "tags": [
-          "automation",
-          "productivity",
-          "utility"
-        ],
-        "integrations": [
-          "gmail",
-          "google_calendar",
-          "google_drive"
-        ]
-      },
-      "slug": "gog",
-      "path": "External/gog",
-      "date_added": "2026-01-26"
-    },
-    {
       "name": "hashcards-setup",
       "description": "Sets up a spaced repetition flashcard system that you can access through your web browser to study and memorize information",
       "metadata": {
@@ -2593,45 +2402,6 @@
       },
       "slug": "meme-factory",
       "path": "External/meme-factory",
-      "date_added": "2026-01-26"
-    },
-    {
-      "name": "notion",
-      "description": "Work with Notion using your own Notion API key (free)",
-      "homepage": "https://developers.notion.com",
-      "compatibility": "see metadata.clawdbot.requires",
-      "metadata": {
-        "author": "Clawdbot",
-        "category": "External",
-        "clawdbot": {
-          "emoji": "📝",
-          "requires": {
-            "env": [
-              "NOTION_API_KEY"
-            ]
-          },
-          "primaryEnv": "NOTION_API_KEY"
-        },
-        "display-name": "Use Notion"
-      },
-      "display": {
-        "icon": "notion",
-        "tags": [
-          "automation",
-          "productivity"
-        ],
-        "integrations": [
-          "notion"
-        ],
-        "secrets": [
-          {
-            "secret_name": "NOTION_API_KEY",
-            "description": "Create an integration at notion.so/my-integrations and copy the internal integration secret."
-          }
-        ]
-      },
-      "slug": "notion",
-      "path": "External/notion",
       "date_added": "2026-01-26"
     },
     {
